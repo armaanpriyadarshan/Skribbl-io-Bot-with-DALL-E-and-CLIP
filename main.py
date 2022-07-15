@@ -1,5 +1,6 @@
 # Main script for the Skribbl.io bot
 # Last edited on 7/13/2022
+# Quote of the day: "U bum" - LeBron James
 
 import itertools
 import time
