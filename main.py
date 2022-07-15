@@ -95,7 +95,7 @@ def screenshot(coord_list):
 
 
 def get_blanks(image):
-    """ Given an image of the blank word (look at test.png or test2.png in tests, returns the number of underscores in the image """
+    """ Given an image of the blank word (look at test.png or test2.png in tests), returns the number of underscores in the image """
 
     # Only works with blank words that don't have letters clued in
     # Initially wanted to do this with Tesseract, but it didn't work, so I used OpenCV's LineSegmentDetector
