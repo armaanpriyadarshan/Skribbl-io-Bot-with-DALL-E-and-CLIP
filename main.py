@@ -221,6 +221,9 @@ def dither_and_draw(image, palette):
     # The drawing also seems much bigger on the board than the 128x128 dithered image
     # Goes color by color from most frequent color to the least frequent (so you don't have to switch color every pixel)
     for color in colors_by_frequency:
+        # Skips the color if it's white
+        if color == (255, 255, 255):
+            continue
         # Switches color by clicking the coordinates in the palette dictionary
         pyautogui.click(palette[color][0], palette[color][1])
         # Iterates through each pixel in every row and draws them if they are the right color
